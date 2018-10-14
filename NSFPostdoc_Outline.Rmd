@@ -8,37 +8,73 @@ date: \today
 output:
   #word_document: default
   pdf_document: #default
-      #toc: true
-      number_sections: true
+      toc: true
+      #number_sections: true
 fontsize: 11pt
 geometry: margin = 1in
 indent: true
 csl: /Users/Ian/Google.Drive/R.Analyses/rMarkdown_CSLs/proceedings-of-the-royal-society-b.csl
 bibliography: /Users/Ian/Google.Drive/PostDoc_Applications/PRSB_test.bib
 linestretch: 1 #0.85 # use to adjust line spacing
+linkcolor: magenta 
+#urlcolor: magenta
 ---
 
+\     
+\     
+
+
+[*NSF Postdoctoral Research Fellowships in Biology Solicitation*](https://www.nsf.gov/pubs/2015/nsf15501/nsf15501.htm)
+
+\pagebreak
 
 # Project Summary (1pg max)
 ## Overview (include sponsoring scientists and institutions):
-Organismal phenotypes are the result of genetic *and* environmental forces, and the interaction between them. When explaining patterns of phenotypic evolution, we can account for some genetic influence by incorporating a phylogeny and drift, recognizing that phenotypes tend to be more similar between closely related species. Descent with modification thus provides us with some expectations as to how phenotypes should evolve. But how do we account for influence of extrinsic biotic factors on observed traits? The field of phylogenetic comparative methods has aimed to help us understand these patterns, and to explain the accumulation of diversity around us. Unfortunately, nearly all commonly used models for describing phenotypic evolution are ecologically neutral, meaning they fail to account for species interactions with one another, and their environment. This results in lifeless models that mathematically describe the *pattern* of phenotypic evolution, but lack a biological explanation of the *process*. My overarching research goal is to extend our existing toolkit to include a more diverse set of models which account for macroecology in macroevolution. This includes incorporating inter-lineage interactions, intra-lineage variation, and historical biogeography, to better explain observed patterns in trait diversity. To develop these methods, I intend to use Australian reptiles as an empirical example. As an island continent, Australia is a natural laboratory for studies of evolution. With more than 1,000 species of squamate reptiles (lizards and snakes), extensive museum collections, and curated occurrence records, Australia is a prime opportunity for investigating macroecological models of phenotypic evolution. 
+Ecosystems are defined by both the organisms inhabiting them, and the interactions among these organisms. Quantifying the influence of these interactions on the evolution of the participants should therefore be a priority in evolutionary biology, but remains difficult. Instead, common comparative methods account for phylogeny, but ignore how cohabiting lineages influence one another. My research goal is to extend our existing toolkit to include methods which more accurately account for macroecology in macroevolution. This includes incorporating (**1**) inter-lineage interactions, (**2**) intra-lineage variation, and (**3**) historical biogeography, to better explain observed patterns in trait diversity.
 
 ## Intellectual Merit
-Organismal interactions provide an important selective force for evolution. Predator-prey, plant-pollinator, and host-parasite relationships form the basis for ecosystems, and drive the accumulation and distribution of diversity. For a while now, both community ecologists and comparative evolutionary biologists have sought to understand how this diversity is built on local and phylogenetic scales. However, they have approached these questions from very different angles. Community ecology has been largely agnostic of evolution along phylogenies, and evolutionary biologists have relied on ecology naïve comparative methods. Now, we are on the edge of being able to appropriately incorporate community interactions into phylogenetic comparative methods of macroevolution. My specific aims are to improve our ability to identify the influence of interlineage interactions on community assembly and trait evolution, and better estimate the strength of these interactions, by accounting for intralineage trait variation and biogeographic histories. This research will help to make our evolutionary models more biologically realistic, blending together the fields of macroecology and macroevolution, and in the process, hopefully bringing together ecologists, evolutionary biologists, museum curators, and computer scientists.
-
-
+Organismal interactions provide an important selective force for evolution. Predator-prey, plant-pollinator, and host-parasite relationships form the basis for ecosystems, and drive the accumulation and distribution of diversity. For a while now, both community ecologists and comparative evolutionary biologists have sought to understand how this diversity is built on local and phylogenetic scales. However, they have approached these questions from very different angles. Community ecology has been largely agnostic of evolution along phylogenies, and evolutionary biologists have relied on ecology naïve comparative methods. Now, we are on the edge of being able to appropriately incorporate community interactions into phylogenetic comparative methods of macroevolution. My specific aims are to improve our ability to identify the influence of interlineage interactions on community assembly and trait evolution, and better estimate the strength of these interactions. By accounting for intralineage trait variation and biogeographic histories, we can make these methods more biologically meaningful. This research intends to blend together the fields of macroecology and macroevolution, and in the process, bring together ecologists with evolutionary biologists, and museum curators with computer scientists.
 
 ## Broader Impacts
-For this project, I will create a number of resources for both the macroecological/macroevolutionary and general science communities. This includes curating an open-source ecological database of Australian reptiles (morphological, dietary, distributional data), designing new methods for modelling trait evolution in a phylogenetic community framework, and communicating my results through scientific publications and popular science engagements. I aim to enrich the experience by collaborating with domestic and international colleagues, including undergraduate and postgraduate students. I have also outlined a plans for a workshop on phylogenetic comparative methods (see appendix). Finally, I enjoy outreach through social media, so will continue to use my position in the community to broadcast results in an entertaining and digestible "PopSci" manner.
+For this project, I will create a number of resources for both the macroecological/macroevolutionary and general science communities. This includes curating an open-source ecological database of Australian reptiles (morphology, dietary, distributional data), designing new methods for modelling trait evolution in a phylogenetic community framework, and communicating my results through scientific publications and popular science engagements. My computational and methodological mentor Dr. Brian O'Meara (*University of Tennessee, Knoxville*) is a world expert in comparative methods, bringing together mathematical advances with empirical evolutionary studies. My curatorial and biological mentor Dr. Mike Lee (*South Australian Museum*) has been actively researching macroevolution and the complex origins of reptiles for over two decades. Dr. Lee works to actively incorporate the often disparate fields of morphological and molecular evolution. Together, these sponsors (and their institutions) provide the opportunity to expand my theoretical understanding of evolutionary biology, and the computational and methodological abilities to apply it. In turn, I aim to enrich the experience of others by collaborating with domestic and international colleagues, including undergraduate and postgraduate students. I have also outlined a plans for a workshop on phylogenetic comparative methods (see appendix). Finally, I enjoy outreach through social media, so will continue to use my position in the community to broadcast results in an entertaining and digestible "PopSci" manner.
 *workshop development*
+
+\pagebreak
 
 # Project Description (6pg max)
 
-
-
 ## Introduction
+Organismal phenotypes are the result of genetic *and* environmental forces, and the interaction between them. When explaining patterns of phenotypic evolution, we can account for some genetic influence by incorporating a phylogeny and drift, recognizing that phenotypes tend to be more similar between closely related species. Descent with modification thus provides us with some expectations as to how phenotypes should evolve. But how do we account for influence of extrinsic biotic factors on observed traits? In response to these questions, and in an attempt to explain the accumulation of organismal diversity, the field of phylogenetic comparative methods was developed. Unfortunately, nearly all commonly used models for describing phenotypic evolution are ecologically neutral, meaning they fail to account for species interactions with one another, and their environment. This results in lifeless models that mathematically describe the *pattern* of phenotypic evolution, but lack a biological explanation of the *process*. **My overarching research goal is to extend our existing toolkit to include a more diverse set of models which account for macroecology in macroevolution.** This includes incorporating inter-lineage interactions, intra-lineage variation, and historical biogeography, to better explain observed patterns in trait diversity. To develop these methods, I intend to use Australian reptiles as an empirical example.  
+\    
 
-## Research Objectives, Methods, Significance
+**But, why Australian reptiles?** As an island continent, Australia is a natural laboratory for studies of evolution. With more than 1,000 species of squamate reptiles (lizards and snakes), extensive museum collections, and curated occurrence records, Australia is a prime opportunity for investigating macroecological models of phenotypic evolution. Since parting ways with Antartica, the Australian continent has been isolated for around 35 million years. This means that with exception a single preexisting Gondwanan clade (Pygopodoid geckos), all other Australian reptile groups have arrived from Asia and radiated in situ. This includes iconic radiations of pythons, monitor lizards, elapid snakes, skinks, agamid lizards, and blind snakes. 
+
+## Research Plan
+
+### Research Objectives
+The overarching goal of this project is to better account for macroecological processes in macroevolutionary methods. This includes both designing new tools, and implementing them to tackle empirical evolutionary questions. We can classify these broad aims of the study into more specific questions:  
+
+**1.**  Does including interspecific interactions improve our inferences of phenotypic evolution?  
+
+**2.**  How do interspecific interactions affect the spatial evolution and distribution of species?  
+
+**3.**  Can we build an extensive ecological dataset of Australian reptiles on a continental scale?
+
+**4.**  Is competitive signal identifiable from phenotypic and spatial data of Australian reptiles?
+
+### Methods
+This research depends directly on the development of novel methods and the collection and curation of a species-level ecological database. The ultimate goal is to integrate these two aspects, to directly address our questions of interlineage interactions using empirical data. We expect that the approaches used to collect the data and develop the comparative methods will also be of direct interest for those hoping to follow a similar methodology.
+
+#### Objective 1: Does including interspecific interactions improve our inferences of phenotypic evolution?
+Interspecific interactions act as a strong selective force on organismal phenotypes. Interactions may be competitive (vying for resources), mutualistic (beneficial to both parties), commensal, parasitic, or predatory, and dictate a variety of dynamic responses. This has led to theories of character displacement, competitive exclusion, and phenotypic matching, among others. Darwin and Wallace each considered...*moth/orchid story*.
+
+#### Objective 2: How do interspecific interactions affect the spatial evolution and distribution of species? 
+The distribution of species across a landscape can be dictated by both intrinsic and extrinsic influences. In maybe the most obvious examples, habitats may "filter" for species with similar ecologies, or instead, competition might result in exclusion from a given ecosystem. 
+
+#### Objective 4: Can we build an extensive ecological dataset of Australian reptiles on a continental scale?
+Existing ecological databases cover much of the Australian vertebrate fauna, including mammals (Pantheria) and birds (Garnett et al., 2014; EltonTraits). While a recent project (Meiri, 2018) has attempted to collate ecological data for global reptiles, morphological data is limited to body size, limiting the applications of such a database. 
+
+### Significance
 
 ## Training Objectives
 
@@ -53,19 +89,10 @@ For this project, I will create a number of resources for both the macroecologic
 
 
 
-\pagebreak
-```{r pressure, echo=FALSE, fig.cap="Phylogeny of Varanus lizards as a result of total evidence dating in starBEAST2.", out.width = '100%', eval=T}
-# change 'eval=FALSE' to 'eval=TRUE' to include this plot
-knitr::include_graphics("/Users/Ian/Google.Drive/R.Analyses/Varanus_Project/Varanus_Tree_MCD250.png")
-# for some reason this appears to be the preferred way to include a plot in the text
-```
- 
-\pagebreak 
-You can also insert this in-line too.  
-![Phylogeny of the varanoidea as a resul of total evidence dating in starBEAST2.](/Users/Ian/Google.Drive/R.Analyses/Varanus_Project/Varanoid_Tree_MCD.pdf)
+
 
 Accounting for these interactions in a phylogenetic framework is integral to understanding the evolution of both simple and complex traits, and fits with our existing knowledge of character displacement. 
 
-[@brennan2017; @beaulieu2012]
+[@brennan2017]
 
 # References  

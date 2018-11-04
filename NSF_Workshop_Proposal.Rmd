@@ -1,10 +1,4 @@
 ---
-title: |  
-  | Integrating macroecology 
-  | into macroevolutionary models
-author: |   
-  | [CPB Postdoc Outline](https://cpb.ucdavis.edu/cpb-postdoc-fellowship)
-date: \today
 output:
   #word_document: default
   pdf_document: #default

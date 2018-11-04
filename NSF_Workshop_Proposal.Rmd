@@ -1,0 +1,52 @@
+---
+title: |  
+  | Integrating macroecology 
+  | into macroevolutionary models
+author: |   
+  | [CPB Postdoc Outline](https://cpb.ucdavis.edu/cpb-postdoc-fellowship)
+date: \today
+output:
+  #word_document: default
+  pdf_document: #default
+      #toc: true
+      #number_sections: false
+fontsize: 11pt
+linkcolor: magenta 
+geometry: margin = 1in
+indent: true
+csl: /Users/Ian/Google.Drive/R.Analyses/rMarkdown_CSLs/PRSB_changes.csl
+bibliography: /Users/Ian/Google.Drive/PostDoc_Applications/CPB_UCDavis/CPB_References.bib
+linestretch: 0.93 # use to adjust line spacing
+---
+\pagebreak
+
+# Workshop Proposal
+
+The basic design of the workshop is a two day intensive focusing on an introduction to Phylogenetic Comparative Methods (PCMs) and visualizing data in a phylogenetic context. I envision the first day learning about the origins and assumptions of PCMs, and the second day centered around the application of methods to participants' data and discussing the future of the field. In a pinch, the format could be restructured to a single-day workshop, but I believe a night of mental digestion will help with understanding the material. In a best-case scenario, I would ask at least two faculty, graduate students, or postdocs to give short sessions (15 min) outlining the implementation of PCMs in their own work, though they need not provide an exercise to accompany this. These contributors could be members of the institution hosting the workshop (a university or museum), or invited leaders in the field (if at a professional conference). 
+
+## Workshop Advertisement
+
+Since Joe Felsenstein [@Felsenstein1985] highlighted the nonindependence of species in comparative methods (owing to their underlying relatedness---phylogeny), Phylogenetic Comparative Methods (PCMs) have become commonplace throughout evolutionary and ecological research. This is likely the result of expanding phylogenetic and computational resources, and user-friendly implementations [@Paradis2004; @Revell2011]. Nonetheless, comparative methods have exploded as a popular area of study and application, particularly in the last ten years. In their most basic form, PCMs can provide information about-- and correct for phylogenetic signal present in data. While this can be helpful in many instances, it may not always be necessary [@DeSantis2018]. Because of the proliferation of PCMs, and the ease with which they can be applied, it is important to value their contributions *and* consider their limitations [@Uyeda2018]. 
+
+\  
+
+I hope this workshop will illustrate how PCMs may be of interest to a diverse set of researchers because they (i) can be relatively easy to apply, (ii) present intuitive explanations about the patterns and processes shaping the diversity we study, and (iii) provide a modular framework for incorporating mathematics, ecology, and phylogenetics. We will pay special attention to models of continuous trait evolution. 
+
+\  
+
+The first of our two day workshop will focus on the origins and assumptions of PCMs, including hands-on instruction for visualizing data. Data visualization is an often underappreciated, but necessary step towards understanding your data [@Revell2018], and we can make it aesthetically satisfying as well. We will further discuss the theory and basics of comparative methods, how current applications correct for phylogeny, and an introduction to popular models of trait evolution. Each short lesson of roughly 15-30 minutes will be followed directly by a hands-on exercise in R to illustrate the point, and provide attendees with functioning code that they can keep.
+
+\  
+
+The second day of our workshop will include discussion and testing more complex phylogenetic comparative models. This will include models in which there are multiple adaptive optima (multi-OU), or diversification is related to an observed trait (--SSE trait-dependence). This will naturally lead us into exercises related to finding the upper and lower limits of sampling and power, calculating likelihoods, and thinking critically about our inferences. Attendees are encouraged to bring their own data, and we can discuss how we can apply PCMs to their questions, design experiments, or even extend existing models to suit their interests. Finally, it would be great to end the workshop with a group picnic or meal, with the hopes of fostering more open discussion about the use and development of comparative methods.
+  
+\  
+
+*Attendees will be expected to have some basic understanding of phylogenetics and R (RStudio), though there is room for troubleshooting and data management.* 
+ 
+
+
+\pagebreak
+
+
+# References  

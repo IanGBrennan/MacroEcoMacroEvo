@@ -121,17 +121,7 @@ pander(df, split.cell=20)
 
 [^1]:ALA--Atlas of Living Australia; ABC--Approximate Bayesian Computation; PCM--Phylogenetic Comparative Model
 
-## Broader Impacts Narrative
-
-
-
-
-
-
-Accounting for these interactions in a phylogenetic framework is integral to understanding the evolution of both simple and complex traits, and fits with our existing knowledge of character displacement. 
-
-
-# References  
+\pagebreak
 
 # Biographic Sketch (2pg CV)
 *I think I have this bit already covered*
@@ -170,3 +160,5 @@ To test for signal from empirical data, I employed phylogenetic comparative meth
 
 
 # 2 Letters of Reference (using Fastlane)
+
+# References  

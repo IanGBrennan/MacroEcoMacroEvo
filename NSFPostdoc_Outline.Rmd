@@ -103,41 +103,23 @@ I have chosen Drs. Lee and O'Meara specifically for their skill sets, research i
 
 \pagebreak
 
-## Timetable: Year 1 (South Australian Museum---Australia)
+## Timetable
+The current timetable assumes Year 1 will be spent at the South Australian Museum in Adelaide, Australia. Years 2 and 3 will be spent at the University of Tennessee---Knoxville, USA. 
 ```{r echo = FALSE}
 library(knitr); library(pander)
 
-df <- data.frame(Research = "Collect morphological data. Build reptile database, and 
-                              integrate it into ALA[^1]",
-                 Training = "a",
-                 Dissemination = "Release extended specimen data format for ALA. Present database to colleagues in ecology and evolution")
-
-pander(df, split.cell=20, split.table=Inf)
+df <- data.frame(Year = c("Y1","Y2", "Y3"),
+                 Research = c("Collect morphological data. Build reptile database, and integrate it into ALA[^1]",
+                              "Build ABC^1^ framework for PCMs^1^. Implement empirically to reptiles",
+                              "Package and release ABC framework for lineage interactions"),
+                 Training = c("a", "b", "c"),
+                 Dissemination = c("Release extended specimen data format for ALA, and present database",
+                                  "Present methods and results at scientific conferences. Publish project   pre-prints",
+                                  "Publish methods and empirical findings"))
+pander(df, split.cell=20)
 ```
 
-## Timetable: Year 2 (University of Tennesee---USA)
-```{r echo = FALSE}
-library(knitr); library(pander)
-
-df <- data.frame(Research = "Build ABC^1^ framework for PCMs^1^",
-                 Training = "a",
-                 Dissemination = "Release extended specimen data format for ALA. Present database to colleagues in ecology and evolution")
-
-pander(df, split.cell=20, split.table=Inf)
-```
-
-## Timetable: Year 3 (University of Tennesee---USA)
-```{r echo = FALSE}
-library(knitr); library(pander)
-
-df <- data.frame(Research = "Package and release ABC framework for lineage interactions",
-                 Training = "a",
-                 Dissemination = "Release extended specimen data format for ALA. Present database to colleagues in ecology and evolution")
-
-pander(df, split.cell=20, split.table=Inf)
-```
-
-[^1]: ALA---Atlas of Living Australia; ABC---Approximate Bayesian Computation; PCM---Phylogenetic Comparative Model
+[^1]:ALA--Atlas of Living Australia; ABC--Approximate Bayesian Computation; PCM--Phylogenetic Comparative Model
 
 ## Broader Impacts Narrative
 
@@ -180,11 +162,11 @@ To test for signal from empirical data, I employed phylogenetic comparative meth
 
 ## Sponsoring Scientists Statement (3 pages max)
 
-
 \pagebreak
 
 ## Documentation from Collection Director(s)
 
 ## Data Management Plan
+
 
 # 2 Letters of Reference (using Fastlane)

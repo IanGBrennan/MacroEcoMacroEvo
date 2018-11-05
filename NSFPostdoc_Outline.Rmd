@@ -99,7 +99,9 @@ Phylogenetic comparative methods are undergoing a period of rapid growth, largel
 ## Training Objectives
 Evolutionary biology is increasingly intersecting with computational biology. To expand my versatility in phylogenetic comparative methods, I aim to first extend my abilities in statistical modelling. This means strengthening the connection between theoretical understanding and computational implementation of macroevolutionary processes. I have carefully chosen two sponsors who are experts in these fields, and in bridging the divide between them, bringing together the conceptual and empirical. 
 
-As a self-taught coder, there remain a number of shortcomings in my computational abilities, particularly in efficiency. Dr. O'Meara is a 
+As a self-taught coder, there remain a number of shortcomings in my computational abilities, particularly with regards to efficiency. Dr. O'Meara is an experienced member of the new-wave of code-conscious evolutionary biologists, and is the author of popular comparative methods packages r8s, brownie, and OUwie [needs citations]. I look forward to also developing a better understanding of the underlying mathematics behind current methods. Dr. Lee is a world-expert in Bayesian modelling, and I will receive training from him in directly in Bayesian computation. 
+
+I have always been interested in a career that merges the creativity of research with the outreach of science communication. I have been and will remain a strong activist for science education and literacy, and am committed to fulfilling this dream. I believe that the training provided by Drs. O'Meara and Lee will help to make me a rising star in the field of evolutionary biology, however this is not my exclusive goal. The South Australian Museum, and proposed workshops, will also provide the opportunity to continue my development as an educator and science communicator. I feel that as a scientist, and a publicly funded researcher, I owe a debt to make my research digestible and accessible to the public. 
 
 ## Career Development
 

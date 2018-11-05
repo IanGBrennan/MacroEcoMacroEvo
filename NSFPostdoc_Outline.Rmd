@@ -14,7 +14,7 @@ fontsize: 11pt
 geometry: margin = 1in
 indent: true
 csl: /Users/Ian/Google.Drive/R.Analyses/rMarkdown_CSLs/proceedings-of-the-royal-society-b.csl
-bibliography: /Users/Ian/Google.Drive/PostDoc_Applications/PRSB_test.bib
+bibliography: /Users/Ian/Google.Drive/PostDoc_Applications/MacroEcoMacroEvo/NSF_References.bib
 linestretch: 1 #0.85 # use to adjust line spacing
 linkcolor: magenta 
 #urlcolor: magenta
@@ -30,7 +30,7 @@ linkcolor: magenta
 
 # Project Summary (1pg max)
 ## Overview (include sponsoring scientists and institutions):
-Ecosystems are defined by both the organisms inhabiting them, and the interactions among these organisms. Quantifying the influence of these interactions on the evolution of the participants should therefore be a priority in evolutionary biology, but remains difficult. Instead, common comparative methods account for phylogeny, but ignore how cohabiting lineages influence one another phenotypically and spatially. My research goal is to extend our existing toolkit to include methods which more accurately account for macroecology in macroevolution. This includes incorporating (**1**) inter-lineage interactions, (**2**) intra-lineage variation, and (**3**) historical biogeography, to better explain observed patterns in trait diversity.
+Ecosystems are defined by both the organisms inhabiting them, and the interactions among these organisms. Quantifying the influence of these interactions on the evolution of the participants should therefore be a priority in evolutionary biology, but remains difficult [@Drury2017a; @Weber2017]. Instead, common comparative methods account for phylogeny, but ignore how cohabiting lineages influence one another phenotypically and spatially. My research goal is to extend our existing toolkit to include methods which more accurately account for macroecology in macroevolution. This includes incorporating (**1**) inter-lineage interactions, (**2**) intra-lineage variation, and (**3**) historical biogeography, to better explain observed patterns in trait diversity.
 
 ## Intellectual Merit
 Organismal interactions provide an important selective force for evolution. Predator-prey, plant-pollinator, and host-parasite relationships form the basis for ecosystems, and drive the accumulation and distribution of diversity. For a while now, both community ecologists and comparative evolutionary biologists have sought to understand how this diversity is built on local and phylogenetic scales. However, they have approached these questions from very different angles. Community ecology has been largely agnostic of evolution along phylogenies, and evolutionary biologists have relied on ecology-naïve comparative methods. Now, we are on the edge of being able to appropriately incorporate community interactions into phylogenetic comparative methods of macroevolution. My specific aims are to improve our ability to identify the influence of interlineage interactions on community assembly and trait evolution, and better estimate the strength of these interactions. By accounting for intralineage trait variation and biogeographic histories, we can make these methods more biologically meaningful. This research intends to blend together the fields of macroecology and macroevolution, and in the process, bring together ecologists with evolutionary biologists, and museum curators with computer scientists.
@@ -72,7 +72,7 @@ I anticipate that the incorporation of multiple factors influencing trait and sp
 #### Objective 1: Does including interspecific interactions improve our inferences of phenotypic evolution?
 Interspecific interactions act as a strong selective force on organismal phenotypes. Interactions may be competitive (vying for resources), mutualistic (beneficial to both parties), commensal, parasitic, or predatory, and dictate a variety of dynamic responses. This has led to theories of character displacement, competitive exclusion, and phenotypic matching, among others. In a classic anecdote, Darwin and Wallace each considered a Madagascan orchid with a foot long nectary. They then independently determined there must be a moth pollinator with an equally long proboscis to match. The later discovery of just such a moth was ultimately less of a surprise than it was a fulfillment of the expectation that organismal interactions can dictate phenotypic evolution, even to absurd extremes. 
 
-Despite witnessing these interactions every day, probabilistic evolutionary models still treat all lineages identically, and until just recently (Drury, Drury, Manceau, Adams) ignored interactions altogether. Building off conceptual work by Nuismer & Harmon (2015), Drury et al. (2016) and Manceau et al. (2016) elegantly integrated a system of ordinary differential equations for estimating the effect of competition on trait evolution in a maximum likelihood framework. We can thus estimate a parameter *S* which describes the strength of the interaction, as well as the polarity: negative values of *S* indicate competition or repulsion, positive values indicate attraction towards common values. The *S* parameter further interacts with the evolutionary rate ($\sigma$), and drift (*d*), to dictate the trajectory of trait evolution. As part of my PhD research, I have extended this method to account for historical biogeography (inferred separately), which attempts to capture the reality that not all lineages occur sympatrically (an assumption of the original model). However, one could imagine that a number of factors dictate the interactions between lineages. Niches can be partitioned by ecological means (diel activity, microhabitat, etc.), and I think these aspects could be incorporated by including a number of interaction matrices. Alternatively, it is unlikely that all lineages are interacting with identical intensity, i.e. estimating a single *S* parameter. Instead, lineages may interact differently based upon the extent of their geographic (broad or subset sympatry) or active period (nocturnal, crepuscular, diurnal) overlap, or even some uncaptured aspect of their ecology (hidden states). The estimation of multiple interaction (*S*), rate ($\sigma$), and drift (*d*) parameters however, becomes increasingly difficult in a **maximum likelihood** framework, encouraging the development for methods which do not require full-likelihood calculations, such as ABC (Beaumont, Csilléry). 
+Despite witnessing these interactions every day, probabilistic evolutionary models still treat *all* lineages identically, and until just recently [@Drury2018; @Drury2017a; @Drury2017b; @Manceau2016], ignored interactions altogether. Building off conceptual work by Nuismer & Harmon (2015), Drury et al. (2016) and Manceau et al. (2016) elegantly integrated a system of ordinary differential equations for estimating the effect of competition on trait evolution in a maximum likelihood framework. We can thus estimate a parameter *S* which describes the strength of the interaction, as well as the polarity: negative values of *S* indicate competition or repulsion, positive values indicate attraction towards common values. The *S* parameter further interacts with the evolutionary rate ($\sigma$), and drift (*d*), to dictate the trajectory of trait evolution. As part of my PhD research, I have extended this method to account for historical biogeography (inferred separately), which attempts to capture the reality that not all lineages occur sympatrically (an assumption of the original model). However, one could imagine that a number of factors dictate the interactions between lineages. Niches can be partitioned by ecological means (diel activity, microhabitat, etc.), and I think these aspects could be incorporated by including a number of interaction matrices. Alternatively, it is unlikely that all lineages are interacting with identical intensity, i.e. estimating a single *S* parameter. Instead, lineages may interact differently based upon the extent of their geographic (broad or subset sympatry) or active period (nocturnal, crepuscular, diurnal) overlap, or even some uncaptured aspect of their ecology (hidden states). The estimation of multiple interaction (*S*), rate ($\sigma$), and drift (*d*) parameters however, becomes increasingly difficult in a **maximum likelihood** framework, encouraging the development for methods which do not require full-likelihood calculations, such as ABC (Beaumont, Csilléry). 
 
 *I can probably cut the Darwin/Wallace anecdote*  
 
@@ -103,7 +103,41 @@ I have chosen Drs. Lee and O'Meara specifically for their skill sets, research i
 
 \pagebreak
 
-## Yearly Timetable (goals, outcomes)
+## Timetable: Year 1 (South Australian Museum---Australia)
+```{r echo = FALSE}
+library(knitr); library(pander)
+
+df <- data.frame(Research = "Collect morphological data. Build reptile database, and 
+                              integrate it into ALA[^1]",
+                 Training = "a",
+                 Dissemination = "Release extended specimen data format for ALA. Present database to colleagues in ecology and evolution")
+
+pander(df, split.cell=20, split.table=Inf)
+```
+
+## Timetable: Year 2 (University of Tennesee---USA)
+```{r echo = FALSE}
+library(knitr); library(pander)
+
+df <- data.frame(Research = "Build ABC^1^ framework for PCMs^1^",
+                 Training = "a",
+                 Dissemination = "Release extended specimen data format for ALA. Present database to colleagues in ecology and evolution")
+
+pander(df, split.cell=20, split.table=Inf)
+```
+
+## Timetable: Year 3 (University of Tennesee---USA)
+```{r echo = FALSE}
+library(knitr); library(pander)
+
+df <- data.frame(Research = "Package and release ABC framework for lineage interactions",
+                 Training = "a",
+                 Dissemination = "Release extended specimen data format for ALA. Present database to colleagues in ecology and evolution")
+
+pander(df, split.cell=20, split.table=Inf)
+```
+
+[^1]: ALA---Atlas of Living Australia; ABC---Approximate Bayesian Computation; PCM---Phylogenetic Comparative Model
 
 ## Broader Impacts Narrative
 
@@ -114,7 +148,6 @@ I have chosen Drs. Lee and O'Meara specifically for their skill sets, research i
 
 Accounting for these interactions in a phylogenetic framework is integral to understanding the evolution of both simple and complex traits, and fits with our existing knowledge of character displacement. 
 
-[@brennan2017]
 
 # References  
 
@@ -122,13 +155,33 @@ Accounting for these interactions in a phylogenetic framework is integral to und
 *I think I have this bit already covered*
 
 # Current and Pending Support
-The only current application for funding is through the University of California, Davis Center for Population Biology. This fellowship ...
+The only current application for funding is through the University of California, Davis Center for Population Biology. This is a two-year self-directed fellowship. I have no other currently submitted, or planned applications for support. 
 
 # Supplementary Documentation
+*I've already submitted my workshop proposal.*
+
+\pagebreak
 
 ## Dissertation Research Abstract (1 page)
 
+### Macroevolution in a changing Australia
+
+Changes to the global climate can promote macroevolutionary and macroecological turnover by either abiotic or biotic drivers, or both. Climatic changes may proceed over long or short time periods, varying in intensity from mild to extreme, and as a result, changes to macroevolutionary patterns may respond in kind. It remains unknown however, how *predictable* organismal responses may be, particularly across ecologically diverse groups. My dissertation research has largely focused on how changing environments have impacted the accumulation of diversity of Australian vertebrates since the continent's isolation ~35 million years ago. 
+
+\  
+
+The Miocene epoch (23–5.3 Ma) has reportedly figured prominently in the diversification of many extant faunal groups. This is likely the result of climatic instability, fluctuating atmospheric CO~2~ concentrations and floral biome turnover. Across the globe, Late Miocene cooling coincided with the birth and expansion of arid biomes and contraction of more mesic ones, as C3 forest and woodland plants were replaced by C4 savannah and grasslands. In Australia, this resulted in a dramatic restructuring of habitats, transitioning the continent from warm wet forests, to the barren red sands of today's "Outback". To investigate this idea, we can search for signature of these climatic shifts in the evolutionary history of Australia's animals. 
+
+\  
+
+To test for signal from empirical data, I employed phylogenetic comparative methods to link diversification patterns with climate-dictated processes. Given a set of taxa and tissue samples, we produced genetic data via traditional Sanger-sequencing and exon-capture methods. This allowed us to infer relationships among the sampled taxa, providing a phylogenetic framework. Using these phylogenies, we investigated (**1**) rates and trends in speciation and extinction, (**2**) biogeographic histories including trends in the prevailing geographic mode of speciation, and (**3**) the evolution of organismal traits. Our findings suggest that heterogeneity in the diversification of Australian animals has been largely dictated by biome restructuring through the Miocene and Plio-Pleistocene. This is evident by (**1**) increased speciation in arid and dispersal back into mesic habitats, (**2**) increased allopatry as a result of fracturing mesic habitats, and (**3**) decreasing rates of phenotypic evolution due to niche conservatism. We provide evidence that broad abiotic and biotic influences can result in similar patterns across cohabiting groups with disparate ecologies. While Australia is unique in its forms of diversity, its biogeographic and phenotypic patterns have probably been shaped by the same processes occurring elsewhere. 
+
+\pagebreak
+
 ## Sponsoring Scientists Statement (3 pages max)
+
+
+\pagebreak
 
 ## Documentation from Collection Director(s)
 

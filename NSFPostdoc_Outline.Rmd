@@ -15,7 +15,7 @@ geometry: margin = 1in
 indent: true
 csl: /Users/Ian/Google.Drive/R.Analyses/rMarkdown_CSLs/proceedings-of-the-royal-society-b.csl
 bibliography: /Users/Ian/Google.Drive/PostDoc_Applications/MacroEcoMacroEvo/NSF_References.bib
-linestretch: 1 #0.85 # use to adjust line spacing
+linestretch: 0.9 #0.85 # use to adjust line spacing
 linkcolor: magenta 
 #urlcolor: magenta
 ---
@@ -30,13 +30,16 @@ linkcolor: magenta
 
 # Project Summary (1pg max)
 ## Overview (include sponsoring scientists and institutions):
-Ecosystems are defined by both the organisms inhabiting them, and the interactions among these organisms. Quantifying the influence of these interactions on the evolution of the participants should therefore be a priority in evolutionary biology, but remains difficult [@Drury2017a; @Weber2017]. Instead, common comparative methods account for phylogeny, but ignore how cohabiting lineages influence one another phenotypically and spatially. My research goal is to extend our existing toolkit to include methods which more accurately account for macroecology in macroevolution. This includes incorporating (**1**) inter-lineage interactions, (**2**) intra-lineage variation, and (**3**) historical biogeography, to better explain observed patterns in trait diversity.
+Ecosystems are defined by both the organisms inhabiting them, and the interactions among these organisms. Quantifying the influence of these interactions on the evolution of the participants should therefore be a priority in evolutionary biology, but remains difficult [@Drury2017a; @Weber2017]. Instead, common comparative methods account for phylogeny, but ignore how cohabiting lineages influence one another phenotypically and spatially. My research goal is to extend our existing toolkit to include methods which more accurately account for macroecology in macroevolution. This includes incorporating (**1**) inter-lineage interactions, (**2**) intra-lineage variation, and (**3**) historical biogeography, to better explain observed patterns in trait diversity. The proposed research will require expanding my understanding of the intersections of evolutionary and computational biology. I will be guided in my journey by two experts in these fields. My computational and methodological mentor Dr. Brian O'Meara (*University of Tennessee, Knoxville*) is a world expert in comparative methods, bringing together mathematical advances with empirical evolutionary studies. My curatorial and biological mentor Dr. Mike Lee (*South Australian Museum*) has been actively researching macroevolution and the complex origins of reptiles for over two decades, incorporating the often disparate fields of morphological and molecular evolution. Together, these sponsors (and their institutions) provide the opportunity to expand my theoretical understanding of evolutionary biology, and the computational and methodological abilities to apply it.
 
 ## Intellectual Merit
-Organismal interactions provide an important selective force for evolution. Predator-prey, plant-pollinator, and host-parasite relationships form the basis for ecosystems, and drive the accumulation and distribution of diversity. For a while now, both community ecologists and comparative evolutionary biologists have sought to understand how this diversity is built on local and phylogenetic scales. However, they have approached these questions from very different angles. Community ecology has been largely agnostic of evolution along phylogenies, and evolutionary biologists have relied on ecology-naïve comparative methods. Now, we are on the edge of being able to appropriately incorporate community interactions into phylogenetic comparative methods of macroevolution. My specific aims are to improve our ability to identify the influence of interlineage interactions on community assembly and trait evolution, and better estimate the strength of these interactions. By accounting for intralineage trait variation and biogeographic histories, we can make these methods more biologically meaningful. This research intends to blend together the fields of macroecology and macroevolution, and in the process, bring together ecologists with evolutionary biologists, and museum curators with computer scientists.
+Organismal interactions provide an important selective force for evolution. Predator-prey, plant-pollinator, and host-parasite relationships form the basis for ecosystems, and drive the accumulation and distribution of diversity. For a while now, both community ecologists and comparative evolutionary biologists have sought to understand how this diversity is built on local and phylogenetic scales. However, they have approached these questions from very different angles. Community ecology has been largely agnostic of evolution along phylogenies, and evolutionary biologists have relied on ecology-naïve comparative methods. Now, we are on the edge of being able to appropriately incorporate community interactions into phylogenetic comparative methods of macroevolution. I aim to improve our ability to identify the influence of interlineage interactions on community assembly and trait evolution, and better estimate the strength of these interactions. I will develop models that account for intralineage trait variation and biogeographic histories, which will make phylogenetic comparative methods more biologically meaningful. My research will blend together the fields of macroecology and macroevolution, and in the process, bring together ecologists with evolutionary biologists, and museum curators with computer scientists.
 
 ## Broader Impacts
-For this project, I will create a number of resources for both the macroecological/macroevolutionary and general science communities. This includes curating an open-source ecological database of Australian reptiles (morphology, dietary, distributional data), designing new methods for modelling trait evolution in a phylogenetic community framework, and communicating my results through scientific publications and popular science engagements. My computational and methodological mentor Dr. Brian O'Meara (*University of Tennessee, Knoxville*) is a world expert in comparative methods, bringing together mathematical advances with empirical evolutionary studies. My curatorial and biological mentor Dr. Mike Lee (*South Australian Museum*) has been actively researching macroevolution and the complex origins of reptiles for over two decades, incorporating the often disparate fields of morphological and molecular evolution. Together, these sponsors (and their institutions) provide the opportunity to expand my theoretical understanding of evolutionary biology, and the computational and methodological abilities to apply it. In turn, I aim to enrich the experience of others by collaborating with domestic and international colleagues, including undergraduate and postgraduate students. I have also outlined a plans for a workshop on phylogenetic comparative methods (see appendix). Finally, I enjoy outreach through social media, so will continue to use my position in the community to broadcast results in an entertaining and digestible "PopSci" manner.
+During this project, I will create a number of resources for both the macroecological/macroevolutionary and general science communities. This includes curating an open-source ecological database of Australian reptiles (morphology, dietary, distributional data), designing new methods for modelling trait evolution in a phylogenetic community framework, and communicating my results through scientific publications and popular science engagements. 
+
+
+I plan to use collections of the South Australian and Western Australian Museums, and will integrate collected data back into the **Atlas of Living Australia** database initiative. Working in museums will also afford me the opportunity to enrich the experience of others by interacting with the public, and collaborating with domestic and international colleagues, including undergraduate and postgraduate students. I have also outlined a plans for a workshop on phylogenetic comparative methods (see appendix). Finally, I enjoy outreach through social media, so will continue to use my position in the community to broadcast results in an entertaining and digestible "PopSci" manner.
 *workshop development*
 
 \pagebreak
@@ -96,14 +99,12 @@ This question represents the synthesis of the three previous objectives. Broadly
 ### Significance
 Phylogenetic comparative methods are undergoing a period of rapid growth, largely as a result of bigger and more complete phylogenies, and the popularity of computational biology. Macroevolutionary research is also popular in science media because many of its inferences are intuitive and exciting. My proposed research builds on existing ecological theory and macroevolutionary methods, synthesizing the two. I anticipate that the output of this project will be valuable both empirically and methodologically. The construction of an ecomorphological database will provide a resource for a diverse array of biologists working from population to macroevolutionary scales. The comparative ABC method design will also make available a generalizable framework for creating evolutionary models.
 
-## Training Objectives
+## Training Objectives and Career Development
 Evolutionary biology is increasingly intersecting with computational biology. To expand my versatility in phylogenetic comparative methods, I aim to first extend my abilities in statistical modelling. This means strengthening the connection between theoretical understanding and computational implementation of macroevolutionary processes. I have carefully chosen two sponsors who are experts in these fields, and in bridging the divide between them, bringing together the conceptual and empirical. 
 
-As a self-taught coder, there remain a number of shortcomings in my computational abilities, particularly with regards to efficiency. Dr. O'Meara is an experienced member of the new-wave of code-conscious evolutionary biologists, and is the author of popular comparative methods packages r8s, brownie, and OUwie [needs citations]. I look forward to also developing a better understanding of the underlying mathematics behind current methods. Dr. Lee is a world-expert in Bayesian modelling, and I will receive training from him in directly in Bayesian computation. 
+As a self-taught coder, there remain a number of shortcomings in my computational abilities, particularly with regards to efficiency. Dr. O'Meara is an experienced member of the new-wave of code-conscious evolutionary biologists, and is the author of popular comparative methods packages treepl, brownie, and OUwie [needs citations]. I look forward to also developing a better understanding of the underlying mathematics behind current methods. Dr. Lee is a world-expert in Bayesian modelling, and I will receive training from him in directly in Bayesian computation. 
 
 I have always been interested in a career that merges the creativity of research with the outreach of science communication. I have been and will remain a strong activist for science education and literacy, and am committed to fulfilling this dream. I believe that the training provided by Drs. O'Meara and Lee will help to make me a rising star in the field of evolutionary biology, however this is not my exclusive goal. The South Australian Museum, and proposed workshops, will also provide the opportunity to continue my development as an educator and science communicator. I feel that as a scientist, and a publicly funded researcher, I owe a debt to make my research digestible and accessible to the public. 
-
-## Career Development
 
 ## Sponsoring Scientist and Institution Justificiation
 
@@ -138,8 +139,16 @@ pander(df, split.cell=20)
 # Biographic Sketch (2pg CV)
 *I think I have this bit already covered*
 
+\pagebreak
+
 # Current and Pending Support
-The only current application for funding is through the University of California, Davis Center for Population Biology. This is a two-year self-directed fellowship. I have no other currently submitted, or planned applications for support. 
+The only current application for funding is through the University of California, Davis Center for Population Biology. This is a two-year self-directed fellowship, to be started sometime September--December 2019. The advertised salary is $50,000 per annum, with $5,000 of research support. The application was submitted on November 1, 2018, and is awaiting review. 
+
+\  
+
+I have no other currently submitted, or planned applications for support. 
+
+\pagebreak
 
 # Supplementary Documentation
 *I've already submitted my workshop proposal.*
@@ -163,6 +172,9 @@ To test for signal from empirical data, I employed phylogenetic comparative meth
 \pagebreak
 
 ## Sponsoring Scientists Statement (3 pages max)
+
+
+
 
 \pagebreak
 
